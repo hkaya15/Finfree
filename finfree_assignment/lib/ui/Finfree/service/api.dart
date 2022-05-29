@@ -20,6 +20,7 @@ class API implements APIBase {
       return PriceEntryInfo.fromJson(jsonResponse);
     } 
      // debugPrint('Request failed with status: ${_response.statusCode}.');
+     // It can be sent null value and show user an dialog.
       return PriceEntryInfo();
     
   }
